@@ -1,0 +1,58 @@
+<div class="row">
+          <div class="col-md-4" data-aos="fade-right" data-aos-delay="200">
+            <img class="img-fluid" src="@/assets/img/kv-2.jpg" alt="" />
+          </div>
+          <div
+            class="col-md-8 my-auto"
+            data-aos="fade-left"
+            data-aos-delay="200"
+          >
+            <div class="register">
+              <h2>I'm ready for the upgrade!</h2>
+              <form @submit.prevent="formSubmit">
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="inputFirstName">First Name</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      v-model="first_name"
+                    />
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="inputLastName">Last Name</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      v-model="last_name"
+                    />
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="inputEmail">Email</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="inputEmail"
+                    v-model="email"
+                  />
+                </div>
+                <div class="form-group" style="display:none">
+                  <label for="inputEmail">Whatsapp Number</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="inputWA"
+                    v-model="email"
+                  />
+                </div>
+                <button type="submit" class="btn btn-form">
+                  Save your seat
+                </button>
+              </form>
+            </div>
+            <button class="btn btn-primary mt-4" @click="callSwal()" v-show="false">
+              Test Swal
+            </button>
+          </div>
+        </div>
