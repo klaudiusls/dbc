@@ -33,3 +33,19 @@
       font-size: 32px;
       font-weight: 700;
   }
+
+  .color-po {
+    color: var(--primary-orange);
+  }
+
+  .color-so {
+    color: var(--secondary-orange);
+  }
+
+  .color-sb {
+    color: var(--secondary-blue);
+  }
+
+  .color-sp {
+    color: var(--secondary-purple);
+  }

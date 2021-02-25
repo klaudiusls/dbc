@@ -1,17 +1,18 @@
 <template>
   <section id="about" class="about">
     <div class="container" data-aos="fade-up">
-      <div class="row gx-0 justify-content-center text-md-center text-left">
-        <div class="col-lg-10" data-aos="fade-up" data-aos-delay="200">
-          <h2>What is Do Better Class?</h2>
+      <div class="row gx-0 justify-content-center text-md-left text-center my-auto">
+        <div class="col-md-6 my-auto" data-aos="fade-up" data-aos-delay="200">
+          <h2>What is <span class="color-sb">Do Better Class?</span></h2>
+        </div>
+        <div class="col-md-6 my-auto" data-aos="fade-up" data-aos-delay="200">
           <p>
-            Do Better Class adalah sebuah program kelas online gratis yang
-            secara rutin diadakan setiap bulan selama satu tahun untuk
-            meningkatkan pengetahuan dan kemampuan audience dalam kajian
-            komunikasi. Mengangkat komunikasi, personal branding dan marketing
-            komunikasi sebagai topik utama, Do Better Class diharapkan menjadi
-            sebuah pintu untuk membuka wawasan dan menggali potensi para insan
-            muda dalam karir, bisnis atau kehidupan pribadi.
+            An answer for every fighter that wants to know how to increase their
+            credibilities and capabilities under the scope of communications. We
+            provide what you are seeking for in communications, personal
+            branding, and marketing communication with free online classes. Get
+            fresh insights and upgrade your business, career, personal life with
+            extra tips & tricks by joining the classes frequently.
           </p>
         </div>
       </div>
@@ -32,6 +33,7 @@ export default {
 --------------------------------------------------------------*/
 .about .container {
   padding: 5rem;
+  padding-top: 7rem;
   padding-bottom: 3rem;
 }
 

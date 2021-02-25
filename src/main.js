@@ -4,9 +4,9 @@ import router from "./router";
 import store from "./store";
 
 // import "bootstrap";
-import "./assets/css/styles.css";
 import "bootstrap";
 import "bootstrap/dist/css/bootstrap.css";
+import "./assets/css/styles.css";
 
 //import "aos";
 import AOS from "aos";
