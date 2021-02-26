@@ -61,6 +61,8 @@ export default {};
     background: var(--secondary-orange) url("~@/assets/img/bg-poster.jpg")
       no-repeat fixed center;
     padding: 0;
+    padding-top: 3rem;
+    margin-top: 3rem;
     width: 100%;
   }
 

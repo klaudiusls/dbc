@@ -6,6 +6,7 @@ import store from "./store";
 // import "bootstrap";
 import "bootstrap";
 import "bootstrap/dist/css/bootstrap.css";
+import "./assets/font/stylesheet.css";
 import "./assets/css/styles.css";
 
 //import "aos";

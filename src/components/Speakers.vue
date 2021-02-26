@@ -8,12 +8,12 @@
       <div class="container-fluid" data-aos="fade-up">
         <div class="row gx-0">
           <div class="col-md-6 text-center">
-            <img src="@/assets/img/quotes-1.png" class="img rounded-circle" alt="" height="480px"/>
+            <img src="@/assets/img/quotes-1.png" class="img img-fluid rounded-circle" alt="" height="480px"/>
           </div>
 
           <div class="col-md-6 d-flex flex-column justify-content-center">
             <div class="content">
-              <h2>
+              <h2 class="color-po">
                 Embrace yourself. <br>
                 Design your personal brand. <br>
                 Act upon it.

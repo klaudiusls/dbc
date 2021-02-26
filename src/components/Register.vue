@@ -10,19 +10,14 @@
           <div class="register">
             <h2 class="text-center">Contact Us</h2>
             <form @submit.prevent="formSubmit">
-              <div class="form-row">
-                <div class="form-group col-md-6">
-                  <label for="inputFirstName">First Name</label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    v-model="first_name"
-                  />
-                </div>
-                <div class="form-group col-md-6">
-                  <label for="inputLastName">Last Name</label>
-                  <input type="text" class="form-control" v-model="last_name" />
-                </div>
+              <div class="form-group">
+                <label for="inputName">Full Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="inputName"
+                  v-model="full_name"
+                />
               </div>
               <div class="form-group">
                 <label for="inputEmail">Email</label>
@@ -42,7 +37,16 @@
                   v-model="wa_number"
                 />
               </div>
-              <button type="submit" class="btn btn-form">Save your seat</button>
+              <div class="form-group">
+                <label for="inputComment">Message</label>
+                <textarea
+                  type="text"
+                  class="form-control"
+                  id="inputComment"
+                  v-model="comment"
+                />
+              </div>
+              <button type="submit" class="btn btn-form">Submit</button>
             </form>
           </div>
           <button
@@ -64,10 +68,10 @@ import axios from "axios";
 export default {
   data: function () {
     return {
-      first_name: "",
-      last_name: "",
+      full_name: "",
       email: "",
       wa_number: "",
+      comment: "",
     };
   },
   methods: {
@@ -83,20 +87,20 @@ export default {
     formSubmit() {
       let currentObj = this;
       axios
-        .post("https://mighty-savannah-14766.herokuapp.com/registrations", {
-          first_name: this.first_name,
-          last_name: this.last_name,
+        .post("https://mighty-savannah-14766.herokuapp.com/contacts", {
+          full_name: this.full_name,
           email: this.email,
           wa_number: this.wa_number,
+          comment: this.comment,
         })
         .then((response) => {
           console.log(response);
           if (response.id != "") {
             currentObj.output = response.data;
-            this.first_name = "";
-            this.last_name = "";
+            this.full_name = "";
             this.email = "";
             this.wa_number = "";
+            this.comment = "";
             this.successSwal();
           }
         })
@@ -129,7 +133,7 @@ form {
   color: white;
 }
 
-input {
+input, textarea {
   color: white;
   font-size: 18px;
   font-weight: 700;
@@ -141,14 +145,14 @@ input {
   background-color: transparent;
 }
 
-input:focus {
+input:focus ,textarea:focus {
   transition: ease-in;
   animation-duration: 0.65;
-  background-color: transparent;
+  background-color: white;
   color: var(--secondary-blue);
   font-size: 18px;
   font-weight: 700;
-  border: 4px solid var(--secondary-orange);
+  border: 4px solid var(--secondary-blue);
 }
 
 .btn-form {
@@ -162,9 +166,14 @@ input:focus {
   width: 100%;
 }
 
+.btn-form:hover {
+  color: white;
+  background-color: var(--secondary-blue);
+}
+
 @media only screen and (max-width: 418px) {
   #register {
-  padding: 1rem;
+  padding: 3rem 1rem;
   padding-bottom: 3rem;
   width: 100%;
   color: white;

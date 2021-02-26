@@ -3,7 +3,7 @@
     <div class="fixed-top navbar">
       <div class="container-fluid d-flex justify-content-between">
         <a href="#" class="navbar-brand d-flex align-items-center">
-          <img src="@/assets/logo/logo-sb.png" class="navbar-brand" alt="">
+          <img src="@/assets/logo/logo-po.png" class="navbar-brand" alt="" />
         </a>
         <a @click="showNav = !showNav" class="nav-button ml-auto mr-4"
           ><span id="nav-icon3"
@@ -17,19 +17,19 @@
         <div class="flex-center p-5">
           <ul class="nav flex-column">
             <li class="nav-item delay-1">
-              <a class="nav-link" href="/">HOME</a>
+              <a class="nav-link" href="/" @click="showNav = !showNav">HOME</a>
             </li>
             <li class="nav-item delay-2">
-              <a class="nav-link" href="#about">ABOUT</a>
+              <a class="nav-link" href="#about" @click="showNav = !showNav">ABOUT</a>
             </li>
             <li class="nav-item delay-3">
-              <a class="nav-link" href="#speaker">SPEAKER</a>
+              <a class="nav-link" href="#speaker" @click="showNav = !showNav">SPEAKER</a>
             </li>
             <li class="nav-item delay-4">
-              <a class="nav-link" href="#event">EVENTS</a>
+              <a class="nav-link" href="#event" @click="showNav = !showNav">EVENTS</a>
             </li>
             <li class="nav-item delay-5">
-              <a class="nav-link" href="#register">CONTACT</a>
+              <a class="nav-link" href="#register" @click="showNav = !showNav">CONTACT</a>
             </li>
             <!-- <li class="nav-item delay-6">
               <a class="nav-link" href="#">QUALITY</a>
@@ -50,34 +50,33 @@
 
 <script>
 export default {
-    data() {
-        return {
-            showNav: false
-        }
-    }
-}
+  data() {
+    return {
+      showNav: false,
+    };
+  },
+};
 </script>
 
 <style scoped>
 .navbar {
-    z-index: 2000;
+  z-index: 2000;
+  background: var(--secondary-orange) url("~@/assets/img/bg-poster.jpg")
+    no-repeat fixed;
+  padding: 0.5rem;
 }
 
 .container-fluid {
-    padding: .5rem 8rem;
+  padding: 0.5rem 8rem;
 }
 
 .navbar-brand {
-    max-height: 80px;
+  max-height: 80px;
 }
 
-.main-menu {
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  visibility: hidden;
-}
 .nav-open .main-menu {
+  width: 50%;
+  height: 100%;
   opacity: 1;
   visibility: visible;
   background: var(--secondary-blue);
@@ -256,5 +255,23 @@ export default {
   -ms-flex-align: center;
   align-items: center;
   height: 100%;
+}
+
+@media only screen and (max-width: 418px) {
+  .navbar {
+    position: fixed;
+    width: 100%;
+    padding: 0;
+  }
+
+  .container-fluid {
+    width: 100%;
+    padding: 0.5rem 2rem;
+  }
+
+  .nav-open .main-menu {
+  width: 100%;
+  height: 100%;
+}
 }
 </style>

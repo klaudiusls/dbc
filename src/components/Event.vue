@@ -34,7 +34,7 @@
     >
       <div class="container-fluid">
         <div class="row webinar-layout">
-          <div class="col-md-6 text-poster my-auto" data-aos="fade-left" data-aos-offset="320" data-aos-easing="ease-in-sine">
+          <div class="col-md-6 text-poster my-auto" data-aos="fade-right" data-aos-offset="320" data-aos-easing="ease-in-sine">
             <img class="img-fluid" src="@/assets/img/text-poster.png" alt="" />
             <a href="https://loket.com/event/dbclass-quarter-life-breakthrough" target="_blank"><button class="btn-save">Save your seat</button></a>
           </div>
@@ -80,53 +80,12 @@
 </template>
 
 <script>
-import axios from "axios";
-
 export default {
   data: function () {
     return {
       activetab: 1,
-      first_name: "",
-      last_name: "",
-      email: "",
-      //wa_number: "",
     };
-  },
-  methods: {
-    successSwal() {
-      this.$swal({
-        showConfirmButton: false,
-        timer: 5000,
-        timerProgressBar: true,
-        icon: "success",
-        title: "We've saved your seat!<br>We'll contact you soon.",
-      });
-    },
-    formSubmit() {
-      let currentObj = this;
-      axios
-        .post("https://mighty-savannah-14766.herokuapp.com/registrations", {
-          first_name: this.first_name,
-          last_name: this.last_name,
-          email: this.email,
-          wa_number: this.wa_number,
-        })
-        .then((response) => {
-          console.log(response);
-          if (response.id != "") {
-            currentObj.output = response.data;
-            this.first_name = "";
-            this.last_name = "";
-            this.email = "";
-            //this.wa_number = "";
-            this.successSwal();
-          }
-        })
-        .catch((error) => {
-          console.log(error.message);
-        });
-    },
-  },
+  }
 };
 </script>
 
@@ -148,6 +107,7 @@ export default {
   cursor: pointer;
   text-align: left;
   padding: 1rem 2rem;
+  padding-bottom: .5rem;
   transition: 0.3s;
   font-size: 18px;
   font-weight: 700;
@@ -180,7 +140,7 @@ export default {
   margin: 0; /* This will center the border. */
   width: 80%; /* Change this to whatever width you want. */
   padding-top: 4px; /* This creates some space between the element and the border. */
-  border-bottom: 4px solid white; /* This creates the border. Replace black with whatever color you want. */
+  border-bottom: 4px solid transparent; /* This creates the border. Replace black with whatever color you want. */
 }
 
 /* Change background color of buttons on hover */
@@ -195,6 +155,7 @@ export default {
 
 /* Style the tab content */
 .tabcontent {
+  width: 100%;
   display: block;
   padding: 5rem;
   padding-bottom: 3rem;
@@ -255,11 +216,28 @@ export default {
 
 @media only screen and (max-width: 418px) {
   .tab {
-    padding: 0.5rem 1rem 0px;
-    margin-bottom: -1px;
+    width: 100%;
+    padding: 0.5rem 0px;
+    padding-bottom: 0;
+    margin-bottom: -2px;
   }
 
+  .tab button {
+  outline: none;
+  cursor: pointer;
+  text-align: left;
+  padding: 1rem 2rem;
+  padding-bottom: .5rem;
+  transition: 0.3s;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 2rem 2rem 0 0;
+  width: 100%;
+}
+
   .tabcontent {
+    border-top: 0;
+    width: 100%;
     padding: 2rem 1rem;
     margin-bottom: -1px;
   }
@@ -275,6 +253,10 @@ export default {
     padding: 3rem 1rem;
     padding-bottom: 0;
     width: 100%;
+  }
+
+  .text-poster {
+    margin-top: 2rem;
   }
 
   .photo-poster {
