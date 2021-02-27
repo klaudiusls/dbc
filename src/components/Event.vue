@@ -35,7 +35,7 @@
       <div class="container-fluid">
         <div class="row webinar-layout">
           <div class="col-md-6 text-poster my-auto" data-aos="fade-right" data-aos-offset="320" data-aos-easing="ease-in-sine">
-            <img class="img-fluid" src="@/assets/img/text-poster.png" alt="" />
+            <img class="img-fluid" src="@/assets/img/text-poster-po.png" alt="" />
             <a href="https://loket.com/event/dbclass-quarter-life-breakthrough" target="_blank"><button class="btn-save">Save your seat</button></a>
           </div>
           <div class="col-md-6 text-right" data-aos="fade-right" data-aos-offset="320" data-aos-easing="ease-in-sine">
@@ -143,9 +143,24 @@ export default {
   border-bottom: 4px solid transparent; /* This creates the border. Replace black with whatever color you want. */
 }
 
-/* Change background color of buttons on hover */
+/* Change background color of buttons on hover 
 .tab button:hover {
   background-color: var(--secondary-blue);
+}*/
+
+.tab-po:hover {
+  background-color: #F03022;
+  transition: ease-in-out background 1s;
+}
+
+.tab-so:hover {
+  background-color: #F05800;
+  transition: ease-in-out background 1s;
+}
+
+.tab-sb:hover {
+  background-color: #210588;
+  transition: ease-in-out background 1s;
 }
 
 /* Create an active/current tablink class 
@@ -182,7 +197,7 @@ export default {
 }
 
 #webinar-tab {
-  background: var(--secondary-orange) url("~@/assets/img/bg-poster.jpg")
+  background: var(--secondary-blue) url("~@/assets/img/bg-blue.jpg")
     no-repeat fixed;
   padding: 0;
   width: 100%;
@@ -210,8 +225,9 @@ export default {
 }
 
 .btn-save:hover {
+  transition: ease-in 0.2s;
     color: white;
-    background-color: var(--secondary-blue);
+    background-color: var(--secondary-orange);
 }
 
 @media only screen and (max-width: 418px) {
@@ -243,8 +259,7 @@ export default {
   }
 
   #webinar-tab {
-    background: var(--secondary-orange) url("~@/assets/img/bg-poster.jpg")
-      no-repeat fixed center;
+    background: var(--secondary-orange) url("~@/assets/img/bg-blue.jpg") no-repeat fixed;
     padding: 0;
     width: 100%;
   }

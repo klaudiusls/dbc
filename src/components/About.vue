@@ -3,7 +3,7 @@
     <div class="container" data-aos="fade-up">
       <div class="row gx-0 justify-content-center text-md-left text-center my-auto">
         <div class="col-md-6 my-auto" data-aos="fade-up" data-aos-delay="200">
-          <h2>What is <span class="color-sb">Do Better Class?</span></h2>
+          <h2>What is <span class="color-po">Do Better Class?</span></h2>
         </div>
         <div class="col-md-6 my-auto" data-aos="fade-up" data-aos-delay="200">
           <p>
@@ -31,6 +31,10 @@ export default {
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
+#about {
+  background: var(--secondary-orange) url("~@/assets/img/bg-blue-dark.jpg") no-repeat;
+}
+
 .about .container {
   padding: 5rem;
   padding-top: 7rem;
@@ -39,13 +43,13 @@ export default {
 
 .about h2 {
   font-size: 32px;
-  font-weight: 700;
-  color: black;
+  color: white;
 }
 
 .about p {
   margin: 3rem 0 2rem 0;
   line-height: 24px;
+  color: white;
 }
 
 @media only screen and (max-width: 418px) {
