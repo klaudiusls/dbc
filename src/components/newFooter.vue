@@ -1,17 +1,39 @@
 <template>
   <footer id="footer" class="footer">
+    <div class="footer-logo">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-sm-12 py-4">
+            <a href=""
+              ><img class="logo" src="@/assets/img/logo-footer.png" alt=""
+            /></a>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="footer-top">
       <div class="container">
-        <div class="row gy-4 justify-content-center text-center footer-info">
-          <div class="col-md-6">
-            <div class="social-links">
-              <a href="/" class="twitter">Home</a>
-              <a href="#update" class="facebook">Highlight</a>
-              <a href="#speaker" class="instagram">Speaker</a>
-              <a href="#event" class="linkedin">Event</a>
-            </div>
+        <div class="row text-center">
+          <div class="col-md-3 copyright order-md-0 order-2">
+            &copy; Copyright 2021 <strong><span>dbrandcom</span></strong>
           </div>
-          <div class="col-md-3">
+          <div class="col-md-6 order-md-1 order-0">
+            <ul class="list-inline social-links">
+              <li class="list-inline-item pl-2">
+                <a href="/">Home</a>
+              </li>
+              <li class="list-inline-item pl-2">
+                <a href="#about">About</a>
+              </li>
+              <li class="list-inline-item pl-2">
+                <a href="#event">Programs</a>
+              </li>
+              <li class="list-inline-item pl-2">
+                <a href="#register">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3 order-md-2 order-1">
             <div class="social-links">
               <a
                 href="https://www.instagram.com/dbrandcom/"
@@ -27,17 +49,8 @@
               ></a>
             </div>
           </div>
-          <div class="col-md-3">
-            <a href="index.html" class="logo">
-              <img src="@/assets/logo/logo-po.png" alt="" />
-            </a>
-          </div>
         </div>
       </div>
-    </div>
-    <div class="copyright">
-      &copy; Copyright 2021 <strong><span>dbrandcom</span></strong
-      >.
     </div>
   </footer>
 </template>
@@ -57,8 +70,8 @@
 .footer .footer-top {
   background-size: contain;
   border-top: 1px solid #e1ecff;
-  border-bottom: 1px solid #e1ecff;
-  padding: 60px 0 30px 0;
+  border-bottom: 0px solid #e1ecff;
+  padding: 1rem 0;
 }
 
 @media (max-width: 992px) {
@@ -67,32 +80,29 @@
   }
 }
 
-.footer .footer-top .footer-info {
-  margin-bottom: 1rem;
+.footer-logo {
+  text-align: center;
+  padding: 2rem;
+  display: inline;
 }
 
-.footer .footer-top .footer-info .logo {
-  line-height: 0;
-  margin-bottom: 1rem;
+.footer-logo img {
+  max-height: 44px;
+  width: auto;
 }
 
-.footer .footer-top .footer-info .logo img {
-  max-height: 120px;
+.nav li {
+  padding: 0.5rem;
 }
 
-.footer .footer-top .footer-info .logo span {
-  font-size: 30px;
-  font-weight: 700;
-  letter-spacing: 1px;
-  color: #012970;
-  font-family: "Nunito", sans-serif;
-  margin-top: 3px;
+ul {
+  padding: 0.5rem;
 }
 
 .footer .footer-top .social-links a {
   text-decoration: none;
-  padding: 1rem 0.5rem;
-  font-size: 20px;
+  padding: 0.5rem;
+  font-size: 1rem;
   display: inline-block;
   color: white;
   line-height: 0;
@@ -111,48 +121,6 @@
   text-transform: uppercase;
   position: relative;
   padding-bottom: 12px;
-}
-
-.footer .footer-top .footer-links {
-  margin-bottom: 30px;
-}
-
-.footer .footer-top .footer-links ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.footer .footer-top .footer-links ul i {
-  padding-right: 2px;
-  color: #d0d4fc;
-  font-size: 12px;
-  line-height: 0;
-}
-
-.footer .footer-top .footer-links ul li {
-  padding: 10px 0;
-  display: flex;
-  align-items: center;
-}
-
-.footer .footer-top .footer-links ul li:first-child {
-  padding-top: 0;
-}
-
-.footer .footer-top .footer-links ul a {
-  color: #013289;
-  transition: 0.3s;
-  display: inline-block;
-  line-height: 1;
-}
-
-.footer .footer-top .footer-links ul a:hover {
-  color: #4154f1;
-}
-
-.footer .footer-top .footer-contact p {
-  line-height: 26px;
 }
 
 .footer .copyright {

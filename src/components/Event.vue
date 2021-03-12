@@ -148,19 +148,19 @@ export default {
   background-color: var(--secondary-blue);
 }*/
 
-.tab-po:hover {
+.tab .tab-po:hover {
   background-color: #F03022;
-  transition: ease-in-out background 1s;
+  transition: ease-in-out background .5s;
 }
 
-.tab-so:hover {
+.tab .tab-so:hover {
   background-color: #F05800;
-  transition: ease-in-out background 1s;
+  transition: ease-in-out background .5s;
 }
 
-.tab-sb:hover {
+.tab .tab-sb:hover {
   background-color: #210588;
-  transition: ease-in-out background 1s;
+  transition: ease-in-out background .5s;
 }
 
 /* Create an active/current tablink class 
@@ -197,8 +197,7 @@ export default {
 }
 
 #webinar-tab {
-  background: var(--secondary-blue) url("~@/assets/img/bg-blue.jpg")
-    no-repeat fixed;
+  background: var(--secondary-blue) url("~@/assets/img/bg-blue.jpg") no-repeat fixed;
   padding: 0;
   width: 100%;
 }
@@ -230,6 +229,20 @@ export default {
     background-color: var(--secondary-orange);
 }
 
+#podcast-tab {
+  background: var(--secondary-orange) url("~@/assets/img/bg-so.jpg") no-repeat fixed;
+  padding: 8rem;
+  width: 100%;
+  text-align: center;
+}
+
+#video-tab {
+  background: var(--primary-orange) url("~@/assets/img/bg-po.jpg") no-repeat fixed;
+  padding: 8rem;
+  width: 100%;
+  text-align: center;
+}
+
 @media only screen and (max-width: 418px) {
   .tab {
     width: 100%;
@@ -259,7 +272,7 @@ export default {
   }
 
   #webinar-tab {
-    background: var(--secondary-orange) url("~@/assets/img/bg-blue.jpg") no-repeat fixed;
+    background: var(--secondary-blue) url("~@/assets/img/bg-blue.jpg") no-repeat fixed;
     padding: 0;
     width: 100%;
   }
@@ -291,5 +304,19 @@ export default {
     font-weight: 700;
     color: white;
   }
+
+  #podcast-tab {
+  background: var(--secondary-orange) url("~@/assets/img/bg-so.jpg") no-repeat fixed;
+  padding: 4rem 1rem;
+  width: 100%;
+  text-align: center;
+}
+
+#video-tab {
+  background: var(--primary-orange) url("~@/assets/img/bg-po.jpg") no-repeat fixed;
+  padding: 4rem 1rem;
+  width: 100%;
+  text-align: center;
+}
 }
 </style>

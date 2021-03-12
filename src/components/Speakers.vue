@@ -7,6 +7,9 @@
     <div id="speaker-tab" class="tabcontent">
       <div class="container-fluid" data-aos="fade-up">
         <div class="row gx-0">
+          <div class="col-sm-12 text-center color-po">
+            <h2>Speakers</h2>
+          </div>
           <div class="col-md-6 text-center">
             <img src="@/assets/img/quotes-1.png" class="img img-fluid rounded-circle" alt="" height="480px"/>
           </div>
@@ -21,7 +24,7 @@
               <p>
                 <strong class="color-sb">Ria R Christiana</strong>
                 <br />
-                Brand Strategist dbrandcom
+                <span>Brand Strategist dbrandcom</span>
               </p>
             </div>
           </div>
@@ -110,8 +113,14 @@ export default {
 }
 
 .speaker p {
-  margin: 10rem 0 2rem 0;
+  margin: 5rem 0 2rem 0;
   font-size: 24px;
+  line-height: 24px;
+}
+
+.speaker p span{
+  margin: 5rem 0 2rem 0;
+  font-size: 18px;
   line-height: 24px;
 }
 

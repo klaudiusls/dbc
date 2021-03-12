@@ -25,21 +25,26 @@ import "sweetalert2/dist/sweetalert2.min.css";
 Vue.use(VueSweetalert2);
 
 //import VueLazyload from 'vue-lazyload'
-/*import VueLazyload from "vue-lazyload";
+import VueLazyload from "vue-lazyload";
 Vue.use(VueLazyload);
 // or with options
-const loadimage = require("@/assets/loading.gif");
-const errorimage = require("@/assets/error.gif");
+const loadimage = require("@/assets/loading.svg");
 Vue.use(VueLazyload, {
   preLoad: 1.3,
-  error: errorimage,
   loading: loadimage,
   attempt: 1,
-});*/
+});
 
 /*/import VueAgile from 'vue-agile'
 import VueAgile from 'vue-agile';
 Vue.use(VueAgile);*/
+
+//import VueAnalytics from 'vue-analytics';
+import VueAnalytics from 'vue-analytics';
+Vue.use(VueAnalytics, {
+  id: 'G-8F6XVNRN06',
+  router
+})
 
 Vue.config.productionTip = false;
 

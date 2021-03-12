@@ -2,14 +2,16 @@
   <section id="masthead" class="masthead" data-aos="fade-down" data-aos-easing="ease-in-ease">
     <div class="container-fluid">
       <div class="row">
-        <div class="col-md-6 text-poster my-auto" data-aos="zoom-in" data-aos-offset="200" data-aos-easing="ease-in-ease">
-          <img class="img-fluid" src="@/assets/img/text-poster.png" alt="" />
+        <div class="col-md-7 text-poster my-auto" data-aos="zoom-in" data-aos-offset="200" data-aos-easing="ease-in-ease">
+          <!-- <img class="img-fluid" src="@/assets/img/text-poster.png" alt="" /> -->
+          <h1>Communication & Branding Online Class by dbrandcom</h1>
+          <h2>#DoBetterTogether</h2>
           <a href="https://loket.com/event/dbclass-quarter-life-breakthrough" target="_blank"><button class="btn-save">Save your seat</button></a>
         </div>
-        <div class="col-md-6 text-right" data-aos="fade-up" data-aos-offset="400" data-aos-easing="ease-in-ease">
+        <div class="col-md-5 text-right" data-aos="fade-up" data-aos-offset="400" data-aos-easing="ease-in-ease">
           <img
             class="img-fluid photo-poster"
-            src="@/assets/img/photo-poster.png"
+            src="@/assets/img/ibu-ria-crop.png"
             alt=""
           />
         </div>
@@ -31,7 +33,7 @@ export default {};
 }
 
 .masthead .container-fluid {
-  padding: 6rem 10rem;
+  padding: 6rem 6rem;
   padding-bottom: 0;
   width: 100%;
 }
@@ -40,11 +42,22 @@ export default {};
   max-height: 700px;
 }
 
+.text-poster h1{
+  font-weight: bold;
+  font-size: 38px;
+  color: white;
+}
+
+.text-poster h2{
+  font-weight: bold;
+  font-size: 24px;
+  color: var(--secondary-blue);
+}
+
 .btn-save {
     margin: 0;
-    margin-top: 2rem;
-    margin-left: 1.5rem;
-    padding: 1rem 2rem;
+    margin-top: 1rem;
+    padding: .75rem 1.5rem;
     border: transparent;
     border-radius: 2rem;
     font-weight: 700;
@@ -72,12 +85,27 @@ export default {};
     width: 100%;
   }
 
+.text-poster {
+  text-align: center;
+}
+
+.text-poster h1{
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 3rem;
+  color: white;
+}
+
+
+.text-poster h2{
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 3rem;
+  color: var(--secondary-blue);
+}
+
   .photo-poster {
     margin-top: 2rem;
-  }
-
-  .btn-save {
-      margin-left: .5rem;
   }
 }
 </style>

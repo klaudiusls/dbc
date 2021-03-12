@@ -117,8 +117,8 @@ export default {
   padding: 5rem 8rem;
   padding-bottom: 3rem;
   width: 100%;
-  color: white;
-  background: var(--secondary-orange);
+  color: var(--primary-orange);
+  background: white;
 }
 
 .register h2 {
@@ -130,16 +130,16 @@ form {
   margin-top: 2rem;
   font-size: 18px;
   font-weight: 700;
-  color: white;
+  color: var(--primary-orange);
 }
 
 input, textarea {
-  color: white;
+  color: var(--secondary-orange);
   font-size: 18px;
   font-weight: 700;
   width: 100%;
   margin-bottom: 0.5rem;
-  border: 4px solid white;
+  border: 4px solid var(--secondary-orange);
   border-radius: 0.25rem;
   padding: 1.5rem;
   background-color: transparent;
@@ -148,7 +148,6 @@ input, textarea {
 input:focus ,textarea:focus {
   transition: ease-in;
   animation-duration: 0.65;
-  background-color: white;
   color: var(--secondary-blue);
   font-size: 18px;
   font-weight: 700;
@@ -159,8 +158,8 @@ input:focus ,textarea:focus {
   margin-top: 1rem;
   font-weight: 700;
   font-size: 18px;
-  color: black;
-  background-color: white;
+  color: white;
+  background-color: var(--secondary-orange);
   border-radius: 0.25rem;
   padding: 1rem 2rem;
   width: 100%;
@@ -176,8 +175,8 @@ input:focus ,textarea:focus {
   padding: 3rem 1rem;
   padding-bottom: 3rem;
   width: 100%;
-  color: white;
-  background: var(--secondary-orange);
+  color: var(--primary-orange);
+  background: white;
 }
 
   h2 {

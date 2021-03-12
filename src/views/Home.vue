@@ -14,7 +14,7 @@
 import Hero from "@/components/Masthead.vue";
 import About from "@/components/About.vue";
 //import Update from "@/components/Update.vue";
-import Speakers from "@/components/Speakers.vue";
+import Speakers from "@/components/newSpeakers.vue";
 import Event from "@/components/Event.vue";
 import Register from "@/components/Register.vue";
 

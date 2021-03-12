@@ -2,8 +2,8 @@
   <header class="head-main">
     <div class="fixed-top navbar">
       <div class="container-fluid d-flex justify-content-between">
-        <a href="#" class="navbar-brand d-flex align-items-center">
-          <img src="@/assets/logo/logo-po.png" class="navbar-brand" alt="" />
+        <a href="/" class="navbar-brand d-flex align-items-center">
+          <img src="@/assets/logo/logo-po-clear.png" class="navbar-brand" alt="" />
         </a>
         <a @click="showNav = !showNav" class="nav-button ml-auto mr-4"
           ><span id="nav-icon3"
@@ -12,7 +12,7 @@
       </div>
     </div>
     <!--navbar end-->
-    <div v-if="showNav" class="nav-open">
+    <div v-if="showNav" class="nav-open" @close="showNav=false">
       <div class="fixed-top main-menu">
         <div class="flex-center p-5">
           <ul class="nav flex-column">
@@ -71,21 +71,33 @@ export default {
 }
 
 .navbar-brand {
-  max-height: 80px;
+  width: auto;
+  height: 45px;
 }
 
 .nav-open .main-menu {
+  animation: ease-in 2s;
+  position: absolute;
+  left: 50%;
   width: 50%;
   height: 100%;
   opacity: 1;
   visibility: visible;
   background: var(--secondary-blue);
 }
+
 .main-menu .nav li a {
   color: #fff;
   font-size: 5vh;
   font-weight: 600;
 }
+
+.main-menu .nav li a:hover {
+  color: var(--primary-orange);
+  font-size: 5vh;
+  font-weight: 600;
+}
+
 .main-menu .nav li {
   opacity: 0;
   -webkit-transform: translateY(-40px);
@@ -95,6 +107,7 @@ export default {
   -o-animation-timing-function: cubic-bezier(0.45, 0.005, 0, 1);
   animation-timing-function: cubic-bezier(0.45, 0.005, 0, 1);
 }
+
 .nav-open .main-menu .nav li {
   opacity: 1;
   -webkit-transform: translateY(0px);
@@ -190,6 +203,7 @@ export default {
   transition: 0.5s ease-in-out;
   cursor: pointer;
 }
+
 .nav-button #nav-icon3 span {
   display: block;
   position: absolute;
@@ -272,6 +286,9 @@ export default {
   .nav-open .main-menu {
   width: 100%;
   height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 }
 </style>

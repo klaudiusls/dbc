@@ -1,7 +1,7 @@
 <template>
   <section id="about" class="about">
     <div class="container" data-aos="fade-up">
-      <div class="row gx-0 justify-content-center text-md-left text-center my-auto">
+      <div class="row justify-content-center text-md-left text-center my-auto">
         <div class="col-md-6 my-auto" data-aos="fade-up" data-aos-delay="200">
           <h2>What is <span class="color-po">Do Better Class?</span></h2>
         </div>
@@ -36,18 +36,16 @@ export default {
 }
 
 .about .container {
-  padding: 5rem;
-  padding-top: 7rem;
-  padding-bottom: 3rem;
+  padding: 7rem 5rem;
 }
 
 .about h2 {
-  font-size: 32px;
+  font-size: 48px;
   color: white;
 }
 
 .about p {
-  margin: 3rem 0 2rem 0;
+  margin: 2rem 0;
   line-height: 24px;
   color: white;
 }
