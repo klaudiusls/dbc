@@ -94,7 +94,7 @@ export default {
 /* Style the tab */
 .tab {
   margin: 0;
-  padding: 0 8rem;
+  padding: 0;
   padding-top: 0.5rem;
   overflow: hidden;
   background-color: white;

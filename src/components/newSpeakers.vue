@@ -18,7 +18,9 @@
         <div class="col-md-6 my-auto">
           <div class="quotes">
             <div class="quotes-text">
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut, nihil sed odit expedita, temporibus illum provident ullam voluptas ex incidunt quas magnam quia alias laborum eveniet ad quaerat at consequatur!</p>
+              <p>Embrace yourself. <br>
+                Design your personal brand. <br>
+                Act upon it.</p>
             </div>
             <div class="quotes-speaker">
               <h3>Ria R Christiana</h3>
@@ -65,6 +67,7 @@ section {
 
 .quotes .quotes-text {
   padding: 1rem;
+  font-size: 24px;
 }
 
 .quotes .quotes-speaker {

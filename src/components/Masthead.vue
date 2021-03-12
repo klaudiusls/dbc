@@ -44,13 +44,14 @@ export default {};
 
 .text-poster h1{
   font-weight: bold;
-  font-size: 38px;
+  font-size: 44px;
   color: white;
 }
 
 .text-poster h2{
+  margin-top: 1rem;
   font-weight: bold;
-  font-size: 24px;
+  font-size: 30px;
   color: var(--secondary-blue);
 }
 
