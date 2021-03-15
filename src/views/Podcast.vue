@@ -29,6 +29,47 @@ export default {
       newMsg: "kladuius",
     };
   },
+  metaInfo: {
+    titleTemplate: "%s | Podcast Collection",
+    meta: [
+      { name: "viewport", content: "width=device-width, initial-scale=1" },
+      {
+        name: "description",
+        content:
+          "Our podcast collection for you"
+      },
+      // OpenGraph data (Most widely used)
+      {
+        property: "og:title",
+        content: "do better class podcast collection"
+      },
+      { property: "og:site_name", content: "do better class" },
+      // The list of types is available here: http://ogp.me/#types
+      { property: "og:type", content: "website" },
+      // Should the the same as your canonical link, see below.
+      {
+        property: "og:url",
+        content: "https://dbclass.dbrandcom.com/podcast"
+      },
+      // Often the same as your meta description, but not always.
+      {
+        property: "og:description",
+        content:
+          "Our podcast collection for you"
+      },
+
+      // Google / Schema.org markup:
+      { itemprop: "name", content: "do better class" },
+      {
+        itemprop: "description",
+        content:
+          "Our podcast collection for you"
+      }
+    ],
+    link: [
+      { rel: "canonical", href: "https://dbclass.dbrandcom.com/podcast" }
+    ]
+  }
 };
 </script>
 

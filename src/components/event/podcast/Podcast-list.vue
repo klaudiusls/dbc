@@ -19,11 +19,6 @@ export default {
   data() {
     return { toggletText: ["Lihat", "Simpan"] };
   },
-  methods: {
-    getImgUrl(image) {
-      return require("@/assets/img/webinar/" + image + ".jpg");
-    },
-  },
 };
 </script>
 
