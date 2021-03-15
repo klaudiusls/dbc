@@ -1,11 +1,14 @@
 <template>
-  <section id="about" class="about">
-    <div class="container" data-aos="fade-up">
-      <div class="row justify-content-center text-md-left text-center my-auto">
-        <div class="col-md-6 my-auto" data-aos="fade-up" data-aos-delay="200">
+  <section id="speaker" class="speaker">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-12 section-head">
           <h2>What is <span class="color-po">Do Better Class?</span></h2>
         </div>
-        <div class="col-md-6 my-auto" data-aos="fade-up" data-aos-delay="200">
+      </div>
+      <div class="row"></div>
+      <div class="row">
+        <div class="col-sm-12">
           <p>
             An answer for every fighter that wants to know how to increase their
             credibilities and capabilities under the scope of communications. We
@@ -20,40 +23,48 @@
   </section>
 </template>
 
-<script>
-export default {
-  name: "About",
-};
-</script>
+<script></script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-/*--------------------------------------------------------------
-# About
---------------------------------------------------------------*/
-#about {
-  background: var(--secondary-orange) url("~@/assets/img/bg-blue-dark.jpg") no-repeat;
+section {
+  background: var(--secondary-blue) url("~@/assets/img/bg-blue.jpg") no-repeat
+    top;
+  color: white;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
-.about .container {
-  padding: 7rem 5rem;
+.container-fluid {
+  padding: 0 6rem;
 }
 
-.about h2 {
+.section-head {
+  padding: 2rem 1rem;
+  padding-bottom: 3rem;
+  text-align: center;
+  color: white;
+}
+
+.section-head h2 {
   font-size: 48px;
-  color: white;
-}
-
-.about p {
-  margin: 2rem 0;
-  line-height: 24px;
-  color: white;
 }
 
 @media only screen and (max-width: 418px) {
-  .about .container {
-    padding: 3rem 2rem;
-    padding-bottom: 2rem;
+  .container-fluid {
+    text-align: center;
+    padding: 0 2rem;
+  }
+
+  .section-head {
+    padding: 2rem 1rem;
+    padding-bottom: 1rem;
+    text-align: center;
+    color: white;
+  }
+
+  .section-head h2 {
+    font-size: 32px;
   }
 }
 </style>

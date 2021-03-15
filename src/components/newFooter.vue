@@ -1,11 +1,11 @@
 <template>
-  <footer id="footer" class="footer">
+  <footer id="footer" class="footer sticky-bottom">
     <div class="footer-logo">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-sm-12 py-4">
-            <a href=""
-              ><img class="logo" src="@/assets/img/logo-footer.png" alt=""
+            <a href="/"
+              ><img class="logo" src="@/assets/img/logo-footer.png"
             /></a>
           </div>
         </div>

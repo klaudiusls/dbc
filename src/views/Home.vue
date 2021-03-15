@@ -5,7 +5,7 @@
     <!-- <Update />  -->
     <Speakers />
     <Event />
-    <Register />
+    <Contact />
   </div>
 </template>
 
@@ -16,7 +16,7 @@ import About from "@/components/About.vue";
 //import Update from "@/components/Update.vue";
 import Speakers from "@/components/newSpeakers.vue";
 import Event from "@/components/Event.vue";
-import Register from "@/components/Register.vue";
+import Contact from "@/components/Contact.vue";
 
 export default {
   name: "Home",
@@ -26,7 +26,7 @@ export default {
     //Update,
     Speakers,
     Event,
-    Register,
+    Contact,
   },
 };
 </script>

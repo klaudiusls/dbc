@@ -2,7 +2,7 @@
   <section id="event" class="event">
     <div class="row tab">
       <button
-        class="col-sm-4 tablinks tab-sb"
+        class="col-4 tablinks tab-sb"
         v-on:click="activetab = 1"
         v-bind:class="[activetab === 1 ? 'active' : '']"
       >
@@ -10,7 +10,7 @@
         <span class="float-right"><i class="bi bi-caret-down-fill"></i></span>
       </button>
       <button
-        class="col-sm-4 tablinks tab-so"
+        class="col-4 tablinks tab-so"
         v-on:click="activetab = 2"
         v-bind:class="[activetab === 2 ? 'active' : '']"
       >
@@ -18,7 +18,7 @@
         <span class="float-right"><i class="bi bi-caret-down-fill"></i></span>
       </button>
       <button
-        class="col-sm-4 tablinks tab-po"
+        class="col-4 tablinks tab-po"
         v-on:click="activetab = 3"
         v-bind:class="[activetab === 3 ? 'active' : '']"
       >
@@ -34,11 +34,30 @@
     >
       <div class="container-fluid">
         <div class="row webinar-layout">
-          <div class="col-md-6 text-poster my-auto" data-aos="fade-right" data-aos-offset="320" data-aos-easing="ease-in-sine">
-            <img class="img-fluid" src="@/assets/img/text-poster-po.png" alt="" />
-            <a href="https://loket.com/event/dbclass-quarter-life-breakthrough" target="_blank"><button class="btn-save">Save your seat</button></a>
+          <div
+            class="col-md-6 text-poster my-auto"
+            data-aos="fade-right"
+            data-aos-offset="320"
+            data-aos-easing="ease-in-sine"
+          >
+            <img
+              class="img-fluid"
+              src="@/assets/img/text-poster-po.png"
+              alt=""
+            />
+            <a
+              href="https://loket.com/event/dbclass-quarter-life-breakthrough"
+              target="_blank"
+              ><button class="btn-register">Save your seat</button></a
+            >
+            <a href="/webinar"><button class="btn-more">See more</button></a>
           </div>
-          <div class="col-md-6 text-right" data-aos="fade-right" data-aos-offset="320" data-aos-easing="ease-in-sine">
+          <div
+            class="col-md-6 text-right"
+            data-aos="fade-right"
+            data-aos-offset="320"
+            data-aos-easing="ease-in-sine"
+          >
             <img
               class="img-fluid photo-poster"
               src="@/assets/img/photo-poster.png"
@@ -58,6 +77,7 @@
         <div class="row">
           <div class="col">
             <h2>Magical things will appear here!</h2>
+            <a href="/podcast"><button class="cta-white">See more</button></a>
           </div>
         </div>
       </div>
@@ -72,6 +92,7 @@
         <div class="row">
           <div class="col">
             <h2>Magical things will appear here!</h2>
+            <a href="/video"><button class="cta-trans">See more</button></a>
           </div>
         </div>
       </div>
@@ -81,11 +102,11 @@
 
 <script>
 export default {
-  data: function () {
+  data: function() {
     return {
       activetab: 1,
     };
-  }
+  },
 };
 </script>
 
@@ -107,7 +128,7 @@ export default {
   cursor: pointer;
   text-align: left;
   padding: 1rem 2rem;
-  padding-bottom: .5rem;
+  padding-bottom: 0.5rem;
   transition: 0.3s;
   font-size: 18px;
   font-weight: 700;
@@ -149,18 +170,18 @@ export default {
 }*/
 
 .tab .tab-po:hover {
-  background-color: #F03022;
-  transition: ease-in-out background .5s;
+  background-color: #f03022;
+  transition: ease-in-out background 0.5s;
 }
 
 .tab .tab-so:hover {
-  background-color: #F05800;
-  transition: ease-in-out background .5s;
+  background-color: #f05800;
+  transition: ease-in-out background 0.5s;
 }
 
 .tab .tab-sb:hover {
   background-color: #210588;
-  transition: ease-in-out background .5s;
+  transition: ease-in-out background 0.5s;
 }
 
 /* Create an active/current tablink class 
@@ -172,7 +193,7 @@ export default {
 .tabcontent {
   width: 100%;
   display: block;
-  padding: 5rem;
+  padding: 6rem;
   padding-bottom: 3rem;
   width: 100%;
   border: transparent;
@@ -197,7 +218,8 @@ export default {
 }
 
 #webinar-tab {
-  background: var(--secondary-blue) url("~@/assets/img/bg-blue.jpg") no-repeat fixed;
+  background: var(--secondary-blue) url("~@/assets/img/bg-blue.jpg") no-repeat
+    fixed;
   padding: 0;
   width: 100%;
 }
@@ -212,32 +234,53 @@ export default {
   max-height: 700px;
 }
 
-.btn-save {
-    margin: 0;
-    margin-top: 2rem;
-    margin-left: 1.5rem;
-    padding: 1rem 2rem;
-    border: transparent;
-    border-radius: 2rem;
-    font-weight: 700;
-    background-color: white;
+.btn-register {
+  margin: 0;
+  margin-top: 2rem;
+  margin-left: 1.5rem;
+  padding: 1rem 2rem;
+  border: transparent;
+  border-radius: 2rem;
+  font-weight: 700;
+  background-color: white;
+  color: var(--secondary-blue);
 }
 
-.btn-save:hover {
+.btn-register:hover {
   transition: ease-in 0.2s;
-    color: white;
-    background-color: var(--secondary-orange);
+  color: white;
+  background-color: var(--secondary-orange);
+}
+
+.btn-more {
+  margin: 0;
+  margin-top: 2rem;
+  margin-left: 1.5rem;
+  padding: 1rem 2rem;
+  border: 2px solid white;
+  border-radius: 2rem;
+  font-weight: 700;
+  background-color: transparent;
+  color: white;
+}
+
+.btn-more:hover {
+  transition: ease-in 0.2s;
+  color: var(--primary-orange);
+  border: 2px solid var(--primary-orange);
 }
 
 #podcast-tab {
-  background: var(--secondary-orange) url("~@/assets/img/bg-so.jpg") no-repeat fixed;
+  background: var(--secondary-orange) url("~@/assets/img/bg-so.jpg") no-repeat
+    right fixed;
   padding: 8rem;
   width: 100%;
   text-align: center;
 }
 
 #video-tab {
-  background: var(--primary-orange) url("~@/assets/img/bg-po.jpg") no-repeat fixed;
+  background: var(--primary-orange) url("~@/assets/img/bg-po.jpg") no-repeat
+    left fixed;
   padding: 8rem;
   width: 100%;
   text-align: center;
@@ -252,27 +295,32 @@ export default {
   }
 
   .tab button {
-  outline: none;
-  cursor: pointer;
-  text-align: left;
-  padding: 1rem 2rem;
-  padding-bottom: .5rem;
-  transition: 0.3s;
-  font-size: 18px;
-  font-weight: bold;
-  border-radius: 2rem 2rem 0 0;
-  width: 100%;
-}
+    outline: none;
+    cursor: pointer;
+    text-align: center;
+    padding: 1rem auto;
+    padding-bottom: 0.5rem;
+    transition: 0.3s;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 2rem 2rem 0 0;
+    width: 100%;
+  }
 
   .tabcontent {
     border-top: 0;
     width: 100%;
-    padding: 2rem 1rem;
+    padding: 3rem 1rem;
     margin-bottom: -1px;
   }
 
+  .float-right {
+    display: none;
+  }
+
   #webinar-tab {
-    background: var(--secondary-blue) url("~@/assets/img/bg-blue.jpg") no-repeat fixed;
+    background: var(--secondary-blue) url("~@/assets/img/bg-blue.jpg") no-repeat
+      fixed;
     padding: 0;
     width: 100%;
   }
@@ -306,17 +354,21 @@ export default {
   }
 
   #podcast-tab {
-  background: var(--secondary-orange) url("~@/assets/img/bg-so.jpg") no-repeat fixed;
-  padding: 4rem 1rem;
-  width: 100%;
-  text-align: center;
-}
+    background: var(--secondary-orange) url("~@/assets/img/bg-so.jpg") no-repeat
+      fixed;
+    padding: 4rem 1rem;
+    width: 100%;
+    text-align: center;
+  }
 
-#video-tab {
-  background: var(--primary-orange) url("~@/assets/img/bg-po.jpg") no-repeat fixed;
-  padding: 4rem 1rem;
-  width: 100%;
-  text-align: center;
-}
+  #video-tab {
+    background: var(--primary-orange) url("~@/assets/img/bg-po.jpg") no-repeat
+      fixed;
+    padding: 4rem 1rem;
+    width: 100%;
+    text-align: center;
+  }
+
+
 }
 </style>

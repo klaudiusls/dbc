@@ -7,20 +7,21 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-6 text-center">
           <img
             src="@/assets/img/quotes-1.png"
             class="img img-fluid rounded-circle"
             alt=""
-            height="480px"
           />
         </div>
         <div class="col-md-6 my-auto">
           <div class="quotes">
             <div class="quotes-text">
-              <p>Embrace yourself. <br>
-                Design your personal brand. <br>
-                Act upon it.</p>
+              <p>
+                Embrace yourself. <br />
+                Design your personal brand. <br />
+                Act upon it.
+              </p>
             </div>
             <div class="quotes-speaker">
               <h3>Ria R Christiana</h3>
@@ -33,14 +34,7 @@
   </section>
 </template>
 
-<script>
-export default {
-  name: "Speakers",
-  props: {
-    msg: String,
-  },
-};
-</script>
+<script></script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
@@ -60,6 +54,20 @@ section {
   font-size: 48px;
 }
 
+.col-md-6 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  max-height: 75%;
+  max-height: 400px;
+  width: auto;
+}
+
 .quotes {
   vertical-align: middle;
   color: #242323;
@@ -75,7 +83,7 @@ section {
   margin-top: 1rem;
 }
 
-.quotes .quotes-speaker h3{
+.quotes .quotes-speaker h3 {
   color: var(--secondary-blue);
 }
 </style>

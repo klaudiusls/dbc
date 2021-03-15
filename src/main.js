@@ -40,11 +40,11 @@ import VueAgile from 'vue-agile';
 Vue.use(VueAgile);*/
 
 //import VueAnalytics from 'vue-analytics';
-import VueAnalytics from 'vue-analytics';
+import VueAnalytics from "vue-analytics";
 Vue.use(VueAnalytics, {
-  id: 'G-8F6XVNRN06',
-  router
-})
+  id: "UA-192096678-1",
+  router,
+});
 
 Vue.config.productionTip = false;
 

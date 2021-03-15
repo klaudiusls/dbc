@@ -4,59 +4,100 @@
 # General
 --------------------------------------------------------------*/
 :root {
-    scroll-behavior: smooth;
-    --primary-orange: #F05722;
-    --secondary-orange: #F08900;
-    --secondary-blue: #052288;
-    --secondary-purple: #440D78;
-  }
-  
-  body {
-    font-family: "Bw Modelica Cyrillic DEMO", "Open Sans", sans-serif;
-    font-weight: 500;
-    color: black;
-    font-size: 18px;
-    letter-spacing: 1px;
-    word-spacing: 1.5px;
-    width: 100%;
-  }
-  
-  a {
-    color: #4154f1;
-    text-decoration: none;
-  }
-  
-  a:hover {
-    color: #717ff5;
-    text-decoration: none;
-  }
-  
-  h1, h2, h3, h4, h5, h6 {
-    font-family: "Bw Modelica Cyrillic DEMO", "Open Sans", sans-serif;
-    font-weight: 900;
-  }
+  scroll-behavior: smooth;
+  --primary-orange: #f05722;
+  --secondary-orange: #f08900;
+  --secondary-blue: #052288;
+  --secondary-purple: #440d78;
+}
 
-  h2 {
-      font-size: 32px;
-      font-weight: 700;
-  }
+body {
+  font-family: "Bw Modelica Cyrillic DEMO", "Open Sans", sans-serif;
+  font-weight: 500;
+  color: black;
+  font-size: 18px;
+  letter-spacing: 1px;
+  word-spacing: 1.5px;
+  width: 100%;
+}
 
-  .color-po {
-    color: var(--primary-orange);
-  }
+a {
+  color: #4154f1;
+  text-decoration: none;
+}
 
-  .color-so {
-    color: var(--secondary-orange);
-  }
+a:hover {
+  color: #717ff5;
+  text-decoration: none;
+}
 
-  .color-sb {
-    color: var(--secondary-blue);
-  }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Bw Modelica Cyrillic DEMO", "Open Sans", sans-serif;
+  font-weight: 900;
+}
 
-  .color-sp {
-    color: var(--secondary-purple);
-  }
+h2 {
+  font-size: 32px;
+  font-weight: 700;
+}
 
-  section {
-    width: 100%;
-  }
+.color-po {
+  color: var(--primary-orange);
+}
+
+.color-so {
+  color: var(--secondary-orange);
+}
+
+.color-sb {
+  color: var(--secondary-blue);
+}
+
+.color-sp {
+  color: var(--secondary-purple);
+}
+
+section {
+  width: 100%;
+}
+
+.cta-white {
+  margin: 0;
+  margin-top: 2rem;
+  margin-left: 1.5rem;
+  padding: 1rem 2rem;
+  border: transparent;
+  border-radius: 2rem;
+  font-weight: 700;
+  background-color: white;
+  color: var(--secondary-blue);
+}
+
+.cta-white:hover {
+  transition: ease-in 0.2s;
+  color: white;
+  background-color: var(--primary-orange);
+}
+
+.cta-trans {
+  margin: 0;
+  margin-top: 2rem;
+  margin-left: 1.5rem;
+  padding: 1rem 2rem;
+  border: 2px solid white;
+  border-radius: 2rem;
+  font-weight: 700;
+  background-color: transparent;
+  color: white;
+}
+
+.cta-trans:hover {
+  transition: ease-in 0.2s;
+  color: white;
+  border: 2px solid var(--secondary-purple);
+}

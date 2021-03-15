@@ -1,13 +1,9 @@
 <template>
-  <section id="register">
+  <section id="contact">
     <div class="container-fluid">
       <div class="row justify-content-center">
-        <div
-          class="col-md-6 my-auto"
-          data-aos="fade-down"
-          data-aos-delay="200"
-        >
-          <div class="register">
+        <div class="col-md-6 my-auto" data-aos="fade-down" data-aos-delay="200">
+          <div class="contact">
             <h2 class="text-center">Contact Us</h2>
             <form @submit.prevent="formSubmit">
               <div class="form-group">
@@ -66,7 +62,7 @@
 import axios from "axios";
 
 export default {
-  data: function () {
+  data: function() {
     return {
       full_name: "",
       email: "",
@@ -113,39 +109,42 @@ export default {
 </script>
 
 <style scoped>
-#register {
+#contact {
   padding: 5rem 8rem;
   padding-bottom: 3rem;
   width: 100%;
-  color: var(--primary-orange);
-  background: white;
+  color: white;
+  background: var(--primary-orange) url("~@/assets/img/bg-po.jpg") no-repeat
+    right bottom;
 }
 
-.register h2 {
-    font-size: 48px;
-    font-weight: 700;
+.contact h2 {
+  font-size: 48px;
+  font-weight: 700;
 }
 
 form {
   margin-top: 2rem;
   font-size: 18px;
   font-weight: 700;
-  color: var(--primary-orange);
+  color: white;
 }
 
-input, textarea {
-  color: var(--secondary-orange);
+input,
+textarea {
+  color: white;
   font-size: 18px;
   font-weight: 700;
   width: 100%;
   margin-bottom: 0.5rem;
-  border: 4px solid var(--secondary-orange);
+  border: 4px solid white;
   border-radius: 0.25rem;
   padding: 1.5rem;
   background-color: transparent;
 }
 
-input:focus ,textarea:focus {
+input:focus,
+textarea:focus {
   transition: ease-in;
   animation-duration: 0.65;
   color: var(--secondary-blue);
@@ -171,13 +170,14 @@ input:focus ,textarea:focus {
 }
 
 @media only screen and (max-width: 418px) {
-  #register {
-  padding: 3rem 1rem;
-  padding-bottom: 3rem;
-  width: 100%;
-  color: var(--primary-orange);
-  background: white;
-}
+  #contact {
+    padding: 3rem 1rem;
+    padding-bottom: 3rem;
+    width: 100%;
+    color: var(--primary-orange);
+    background: var(--primary-orange) url("~@/assets/img/bg-po.jpg") no-repeat
+      fixed;
+  }
 
   h2 {
     font-size: 32px;
