@@ -1,5 +1,5 @@
 <template>
-  <section id="speaker" class="speaker">
+  <section id="about" class="about">
     <div class="container-fluid">
       <div class="row">
         <div class="col-sm-12 section-head">

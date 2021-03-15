@@ -271,7 +271,7 @@ export default {
 }
 
 #podcast-tab {
-  background: var(--secondary-orange) url("~@/assets/img/bg-so.jpg") no-repeat
+  background: var(--secondary-orange) url("~@/assets/img/bg-poster.jpg") no-repeat
     right fixed;
   padding: 8rem;
   width: 100%;
@@ -354,7 +354,7 @@ export default {
   }
 
   #podcast-tab {
-    background: var(--secondary-orange) url("~@/assets/img/bg-so.jpg") no-repeat
+    background: var(--secondary-orange) url("~@/assets/img/bg-poster.jpg") no-repeat
       fixed;
     padding: 4rem 1rem;
     width: 100%;

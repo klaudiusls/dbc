@@ -17,9 +17,8 @@
           <h1>Communication & Branding Online Class by dbrandcom</h1>
           <h2>#DoBetterTogether</h2>
           <a
-            href="https://loket.com/event/dbclass-quarter-life-breakthrough"
-            target="_blank"
-            ><button class="btn-save">Save your seat</button></a
+            href="#about"
+            ><button class="btn-save">Learn more</button></a
           >
         </div>
         <div

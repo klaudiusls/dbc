@@ -176,7 +176,7 @@ textarea:focus {
     width: 100%;
     color: var(--primary-orange);
     background: var(--primary-orange) url("~@/assets/img/bg-po.jpg") no-repeat
-      fixed;
+      right bottom;
   }
 
   h2 {

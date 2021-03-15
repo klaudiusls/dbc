@@ -2,7 +2,6 @@
   <div class="podcast">
     <Header v-bind="headerData" />
     <Podcasts />
-    <Hello />
   </div>
 </template>
 
@@ -11,7 +10,6 @@
 //import Update from "@/components/Update.vue";
 import Header from "@/components/event/Header.vue";
 import Podcasts from "@/components/event/podcast/Podcast.vue";
-import Hello from "@/components/HelloWorld.vue";
 
 export default {
   name: "Podcast",
@@ -19,7 +17,6 @@ export default {
     //Update
     Header,
     Podcasts,
-    Hello
   },
   data: function() {
     return {
