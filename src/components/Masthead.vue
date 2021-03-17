@@ -16,10 +16,7 @@
           <!-- <img class="img-fluid" src="@/assets/img/text-poster.png" alt="" /> -->
           <h1>Communication & Branding Online Class by dbrandcom</h1>
           <h2>#DoBetterTogether</h2>
-          <a
-            href="#about"
-            ><button class="btn-save">Learn more</button></a
-          >
+          <a href="#about"><button class="btn-save">Learn more</button></a>
         </div>
         <div
           class="col-md-5 text-right"
@@ -46,6 +43,7 @@ export default {};
 .masthead {
   background: var(--secondary-orange) url("~@/assets/img/bg-poster.jpg")
     no-repeat fixed;
+  background-size: 100% 100%;
   padding: 0;
   width: 100%;
 }
@@ -68,7 +66,7 @@ export default {};
 
 .text-poster h2 {
   margin-top: 1rem;
-  font-weight: bold;
+  font-weight: normal;
   font-size: 30px;
   color: var(--secondary-blue);
 }
@@ -91,10 +89,9 @@ export default {};
 @media only screen and (max-width: 418px) {
   #masthead {
     background: var(--secondary-orange) url("~@/assets/img/bg-poster.jpg")
-      no-repeat fixed center;
+      no-repeat center;
     padding: 0;
     padding-top: 3rem;
-    margin-top: 3rem;
     width: 100%;
   }
 

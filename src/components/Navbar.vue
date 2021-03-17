@@ -61,8 +61,6 @@ export default {
 <style scoped>
 .navbar {
   z-index: 2000;
-  background: var(--secondary-orange) url("~@/assets/img/bg-poster.jpg")
-    no-repeat fixed;
   padding: 0.5rem;
 }
 
@@ -77,7 +75,6 @@ export default {
 
 .nav-open .main-menu {
   animation: ease-in 2s;
-  position: absolute;
   left: 50%;
   width: 50%;
   height: 100%;

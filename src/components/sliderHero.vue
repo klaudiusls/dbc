@@ -8,23 +8,19 @@
     pause-on-dots-hover="pause-on-dots-hover"
     autoplay="autoplay"
   >
-    <img
-      class="slide"
-      src="@/assets/img/hero.jpg" />
-    <img
-      class="slide"
-      src="@/assets/img/hero.jpg"
+    <img class="slide" src="@/assets/img/hero.jpg" />
+    <img class="slide" src="@/assets/img/hero.jpg"
   /></agile>
 </template>
 
 <script>
-import { VueAgile } from 'vue-agile';
+import { VueAgile } from "vue-agile";
 
-export default { 
-    components: {
-        agile: VueAgile 
-    }
-}
+export default {
+  components: {
+    agile: VueAgile,
+  },
+};
 </script>
 
 <style>

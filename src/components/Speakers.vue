@@ -1,7 +1,11 @@
 <template>
   <section id="speaker" class="speaker">
     <div class="row tab">
-      <button class="col-md-6 tablinks" id="defaultOpen" style="display:none">Speaker<span class="float-right"><i class="bi bi-caret-down-fill"></i></span></button>
+      <button class="col-md-6 tablinks" id="defaultOpen" style="display: none">
+        Speaker<span class="float-right"
+          ><i class="bi bi-caret-down-fill"></i
+        ></span>
+      </button>
     </div>
 
     <div id="speaker-tab" class="tabcontent">
@@ -11,14 +15,19 @@
             <h2>Speakers</h2>
           </div>
           <div class="col-md-6 text-center">
-            <img src="@/assets/img/quotes-1.png" class="img img-fluid rounded-circle" alt="" height="480px"/>
+            <img
+              src="@/assets/img/quotes-1.png"
+              class="img img-fluid rounded-circle"
+              alt=""
+              height="480px"
+            />
           </div>
 
           <div class="col-md-6 d-flex flex-column justify-content-center">
             <div class="content">
               <h2 class="color-po">
-                Embrace yourself. <br>
-                Design your personal brand. <br>
+                Embrace yourself. <br />
+                Design your personal brand. <br />
                 Act upon it.
               </h2>
               <p>
@@ -118,7 +127,7 @@ export default {
   line-height: 24px;
 }
 
-.speaker p span{
+.speaker p span {
   margin: 5rem 0 2rem 0;
   font-size: 18px;
   line-height: 24px;
@@ -137,25 +146,25 @@ export default {
   }
 
   .speaker .content {
-  position: relative;
-  border: none;
-  padding: 2rem .25rem;
-}
+    position: relative;
+    border: none;
+    padding: 2rem 0.25rem;
+  }
 
-.speaker img {
-  max-height: 320px;
-  border-radius: 1rem;
-  box-shadow: 4px 2px 8px rgba(0, 0, 0, 0.25);
-}
+  .speaker img {
+    max-height: 320px;
+    border-radius: 1rem;
+    box-shadow: 4px 2px 8px rgba(0, 0, 0, 0.25);
+  }
 
-.speaker h2 {
-  font-size: 24px;
-}
+  .speaker h2 {
+    font-size: 24px;
+  }
 
-.speaker p {
-  text-align: right;
-  margin: 3rem 0 0 0;
-  line-height: 24px;
-}
+  .speaker p {
+    text-align: right;
+    margin: 3rem 0 0 0;
+    line-height: 24px;
+  }
 }
 </style>

@@ -102,7 +102,7 @@
 
 <script>
 export default {
-  data: function() {
+  data: function () {
     return {
       activetab: 1,
     };
@@ -219,7 +219,8 @@ export default {
 
 #webinar-tab {
   background: var(--secondary-blue) url("~@/assets/img/bg-blue.jpg") no-repeat
-    fixed;
+    top left;
+  background-size: 100% 100%;
   padding: 0;
   width: 100%;
 }
@@ -271,8 +272,9 @@ export default {
 }
 
 #podcast-tab {
-  background: var(--secondary-orange) url("~@/assets/img/bg-poster.jpg") no-repeat
-    right fixed;
+  background: var(--secondary-orange) url("~@/assets/img/bg-poster.jpg")
+    no-repeat right fixed;
+  background-size: 100% auto;
   padding: 8rem;
   width: 100%;
   text-align: center;
@@ -281,6 +283,7 @@ export default {
 #video-tab {
   background: var(--primary-orange) url("~@/assets/img/bg-po.jpg") no-repeat
     left fixed;
+  background-size: 100% auto;
   padding: 8rem;
   width: 100%;
   text-align: center;
@@ -319,8 +322,8 @@ export default {
   }
 
   #webinar-tab {
-    background: var(--secondary-blue) url("~@/assets/img/bg-blue.jpg") no-repeat
-      fixed;
+    background: var(--secondary-blue) url("~@/assets/img/bg-blue.jpg") no-repeat;
+    background-size: cover;
     padding: 0;
     width: 100%;
   }
@@ -354,21 +357,20 @@ export default {
   }
 
   #podcast-tab {
-    background: var(--secondary-orange) url("~@/assets/img/bg-poster.jpg") no-repeat
-      fixed;
+    background: var(--secondary-orange) url("~@/assets/img/bg-poster.jpg")
+      no-repeat;
+    background-size: cover;
     padding: 4rem 1rem;
     width: 100%;
     text-align: center;
   }
 
   #video-tab {
-    background: var(--primary-orange) url("~@/assets/img/bg-po.jpg") no-repeat
-      fixed;
+    background: var(--primary-orange) url("~@/assets/img/bg-po.jpg") no-repeat;
+    background-size: cover;
     padding: 4rem 1rem;
     width: 100%;
     text-align: center;
   }
-
-
 }
 </style>

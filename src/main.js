@@ -42,6 +42,17 @@ Vue.use(VueLazyload, {
   attempt: 1,
 });
 
+//import iframeResize from 'iframe-resizer/js/iframeResizer';
+import iframeResize from 'iframe-resizer/js/iframeResizer';
+Vue.directive('resize', {
+  bind: function(el, { value = {} }) {
+    el.addEventListener('load', () => iframeResize(value, el))
+  },
+  unbind: function (el) {
+    el.iFrameResizer.removeListeners();
+  }
+})
+
 /*/import VueAgile from 'vue-agile'
 import VueAgile from 'vue-agile';
 Vue.use(VueAgile);*/

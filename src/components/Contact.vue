@@ -62,7 +62,7 @@
 import axios from "axios";
 
 export default {
-  data: function() {
+  data: function () {
     return {
       full_name: "",
       email: "",
@@ -116,6 +116,7 @@ export default {
   color: white;
   background: var(--primary-orange) url("~@/assets/img/bg-po.jpg") no-repeat
     right bottom;
+  background-size: 100% 100%;
 }
 
 .contact h2 {

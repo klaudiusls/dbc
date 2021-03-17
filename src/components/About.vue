@@ -8,6 +8,17 @@
       </div>
       <div class="row"></div>
       <div class="row">
+        <div class="col-sm-12 mb-4">
+          <iframe
+            v-resize="{ log: true }"
+            width="100%"
+            height="720px"
+            src="https://www.youtube.com/embed/mbkD3ACMLtk"
+            frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
         <div class="col-sm-12">
           <p>
             An answer for every fighter that wants to know how to increase their
