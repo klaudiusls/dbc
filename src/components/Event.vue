@@ -53,7 +53,7 @@
             <a href="/webinar"><button class="btn-more">See more</button></a>
           </div>
           <div
-            class="col-md-6 text-right"
+            class="col-md-6 text-md-right text-center"
             data-aos="fade-right"
             data-aos-offset="320"
             data-aos-easing="ease-in-sine"
@@ -233,12 +233,13 @@ export default {
 
 .photo-poster {
   max-height: 700px;
+  filter: drop-shadow(4px 2px 8px #585858)
 }
 
 .btn-register {
   margin: 0;
   margin-top: 2rem;
-  margin-left: 1.5rem;
+  margin-left: .5rem;
   padding: 1rem 2rem;
   border: transparent;
   border-radius: 2rem;
@@ -329,7 +330,7 @@ export default {
   }
 
   #webinar-tab .container-fluid {
-    padding: 3rem 1rem;
+    padding: 3rem 2rem;
     padding-bottom: 0;
     width: 100%;
   }
@@ -340,6 +341,7 @@ export default {
 
   .photo-poster {
     margin-top: 2rem;
+    max-height: 360px;
   }
 
   .event .register {
@@ -372,5 +374,16 @@ export default {
     width: 100%;
     text-align: center;
   }
+
+  .btn-register {
+  margin-left: 0;
+  width: 100%;
+}
+
+.btn-more {
+  margin-top: 1rem;
+  margin-left: 0;
+  width: 100%;
+}
 }
 </style>

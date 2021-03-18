@@ -178,6 +178,7 @@ textarea:focus {
     color: var(--primary-orange);
     background: var(--primary-orange) url("~@/assets/img/bg-po.jpg") no-repeat
       right bottom;
+      text-align: center !important;
   }
 
   h2 {
@@ -185,5 +186,10 @@ textarea:focus {
     font-weight: 700;
     color: white;
   }
+
+  input,
+textarea, .btn-form {
+  border-radius: 1rem;
+}
 }
 </style>
