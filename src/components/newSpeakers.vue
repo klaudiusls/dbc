@@ -14,7 +14,7 @@
             alt=""
           />
         </div>
-        <div class="col-md-6 my-auto">
+        <div class="col-md-6 my-md-auto my-4">
           <div class="quotes">
             <div class="quotes-text">
               <p>
@@ -39,8 +39,8 @@
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 section {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 .section-head {
@@ -85,5 +85,15 @@ img {
 
 .quotes .quotes-speaker h3 {
   color: var(--secondary-blue);
+}
+
+@media only screen and (max-width: 418px) {
+  .rounded-circle {
+    border-radius: 5% !important;
+  }
+
+  .col-md-6 {
+    padding: 0 2rem;
+  }
 }
 </style>

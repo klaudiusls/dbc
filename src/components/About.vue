@@ -8,7 +8,7 @@
       </div>
       <div class="row"></div>
       <div class="row">
-        <div class="col-sm-12 text-center mb-4">
+        <div class="col-sm-12 text-md-center text-left mb-4">
           <p>
             An answer for every fighter that wants to know how to increase their
             credibilities and capabilities under the scope of communications. We
@@ -43,8 +43,8 @@ section {
   background: var(--secondary-blue) url("~@/assets/img/bg-blue.jpg") no-repeat
     top;
   color: white;
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 .container-fluid {
@@ -60,6 +60,10 @@ section {
 
 .section-head h2 {
   font-size: 48px;
+}
+
+iframe {
+  border-radius: 1rem;
 }
 
 @media only screen and (max-width: 418px) {

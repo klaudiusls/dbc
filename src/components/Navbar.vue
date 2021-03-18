@@ -9,7 +9,7 @@
             alt=""
           />
         </a>
-        <a @click="showNav = !showNav" class="nav-button ml-auto mr-4"
+        <a @click="showNav = !showNav" class="nav-button ml-auto"
           ><span id="nav-icon3"
             ><span></span><span></span><span></span><span></span></span
         ></a>
@@ -134,12 +134,12 @@ export default {
 }
 
 .navbar-brand {
-  width: 65px;
-  height: 65px;
+  width: 55px;
+  height: 55px;
 }
 
 .navbar-brand img {
-  height: 60px;
+  height: 50px;
   width: auto;
 }
 
