@@ -26,7 +26,8 @@ export default {};
 <style scoped>
 .webinar-highlight {
   background: var(--secondary-orange) url("~@/assets/img/bg-poster.jpg")
-    no-repeat center;
+    no-repeat top left;
+  background-size: 100% 100%;
   padding: 0;
   width: 100%;
 }

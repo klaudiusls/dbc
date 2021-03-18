@@ -77,7 +77,7 @@
         <div class="row">
           <div class="col">
             <h2>Magical things will appear here!</h2>
-            <a href="/podcast"><button class="cta-white">See more</button></a>
+            <!-- <a href="/podcast"><button class="cta-white">See more</button></a> -->
           </div>
         </div>
       </div>
@@ -92,7 +92,7 @@
         <div class="row">
           <div class="col">
             <h2>Magical things will appear here!</h2>
-            <a href="/video"><button class="cta-trans">See more</button></a>
+            <!-- <a href="/video"><button class="cta-trans">See more</button></a> -->
           </div>
         </div>
       </div>

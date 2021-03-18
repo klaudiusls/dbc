@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <Navbar :class="{ 'hidden-navbar': !showNavbar }"/>
+    <Navbar :class="{ 'hidden-navbar': !showNavbar }" />
     <router-view/>
     <Footer />
   </div>

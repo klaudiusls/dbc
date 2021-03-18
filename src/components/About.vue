@@ -8,18 +8,7 @@
       </div>
       <div class="row"></div>
       <div class="row">
-        <div class="col-sm-12 mb-4">
-          <iframe
-            v-resize="{ log: true }"
-            width="100%"
-            height="720px"
-            src="https://www.youtube.com/embed/mbkD3ACMLtk"
-            frameborder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
-        </div>
-        <div class="col-sm-12">
+        <div class="col-sm-12 text-center mb-4">
           <p>
             An answer for every fighter that wants to know how to increase their
             credibilities and capabilities under the scope of communications. We
@@ -28,6 +17,18 @@
             fresh insights and upgrade your business, career, personal life with
             extra tips & tricks by joining the classes frequently.
           </p>
+        </div>
+        <div class="col-sm-12 mb-4">
+          <iframe
+            v-resize="{ log: true }"
+            width="100%"
+            height="472"
+            src="https://www.youtube.com/embed/mbkD3ACMLtk?rel=0&vq=hd720"
+            style="position:relative;width:1px;min-width:100%;*width:100%;"
+            frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
         </div>
       </div>
     </div>

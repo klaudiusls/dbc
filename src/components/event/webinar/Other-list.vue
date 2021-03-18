@@ -1,11 +1,11 @@
 <template>
   <div class="col-md-6 webinar-detail d-md-flex">
-    <div class="col-md-8 webinar-desc my-auto">
+    <div class="col-md-6 webinar-desc my-auto">
       <p>{{ webinar.date }}</p>
       <h3>{{ webinar.title }}</h3>
       <p>{{ webinar.speaker }}</p>
     </div>
-    <div class="col-md-4 webinar-img">
+    <div class="col-md-6 webinar-img">
       <img class="img-fluid" src="@/assets/img/webinar/spk-02.jpg" alt="" />
     </div>
   </div>

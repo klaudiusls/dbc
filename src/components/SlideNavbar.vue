@@ -1,11 +1,11 @@
 <template>
   <header class="head-main">
-    <div class="fixed-top navbar" :class="{'bg-nav': $route.path != '/'}">
+    <div class="fixed-top navbar">
       <div class="container-fluid d-flex justify-content-between">
         <a href="/" class="navbar-brand d-flex align-items-center">
           <img
             src="@/assets/logo/logo-po-clear.png"
-            class=""
+            class="navbar-brand"
             alt=""
           />
         </a>
@@ -16,42 +16,44 @@
       </div>
     </div>
     <!--navbar end-->
-
-    <div v-if="showNav" class="nav-open" @close="showNav = false">
-      <div class="fixed-top main-menu">
-        <div class="flex-center p-5">
-          <a
-            href="javascript:void(0)"
-            class="closebtn"
-            @close="showNav = false"
-            @click="showNav = false"
-            ><i class="bi bi-x"></i
-          ></a>
-          <ul class="nav flex-column" v-if="$route.path == '/'">
-            <li class="nav-item delay-1">
-              <a class="nav-link" href="/" @click="showNav = !showNav">HOME</a>
-            </li>
-            <li class="nav-item delay-2">
-              <a class="nav-link" href="#about" @click="showNav = !showNav"
-                >ABOUT</a
-              >
-            </li>
-            <li class="nav-item delay-3">
-              <a class="nav-link" href="#speaker" @click="showNav = !showNav"
-                >SPEAKER</a
-              >
-            </li>
-            <li class="nav-item delay-4">
-              <a class="nav-link" href="#event" @click="showNav = !showNav"
-                >EVENTS</a
-              >
-            </li>
-            <li class="nav-item delay-5">
-              <a class="nav-link" href="#contact" @click="showNav = !showNav"
-                >CONTACT</a
-              >
-            </li>
-            <!-- <li class="nav-item delay-6">
+    <transition name="slide-fade">
+      <div v-if="showNav" class="nav-open" @close="showNav = false">
+        <transition name="slide-fade">
+          <div class="fixed-top main-menu">
+            <div class="flex-center p-5">
+              <ul class="nav flex-column">
+                <li class="nav-item delay-1">
+                  <a class="nav-link" href="/" @click="showNav = !showNav"
+                    >HOME</a
+                  >
+                </li>
+                <li class="nav-item delay-2">
+                  <a class="nav-link" href="#about" @click="showNav = !showNav"
+                    >ABOUT</a
+                  >
+                </li>
+                <li class="nav-item delay-3">
+                  <a
+                    class="nav-link"
+                    href="#speaker"
+                    @click="showNav = !showNav"
+                    >SPEAKER</a
+                  >
+                </li>
+                <li class="nav-item delay-4">
+                  <a class="nav-link" href="#event" @click="showNav = !showNav"
+                    >EVENTS</a
+                  >
+                </li>
+                <li class="nav-item delay-5">
+                  <a
+                    class="nav-link"
+                    href="#contact"
+                    @click="showNav = !showNav"
+                    >CONTACT</a
+                  >
+                </li>
+                <!-- <li class="nav-item delay-6">
               <a class="nav-link" href="#">QUALITY</a>
             </li>
             <li class="nav-item delay-7">
@@ -60,30 +62,12 @@
             <li class="nav-item delay-8">
               <a class="nav-link" href="#">CONTACT US</a>
             </li> -->
-          </ul>
-          <ul class="nav flex-column" v-if="$route.path != '/'">
-            <li class="nav-item delay-1">
-              <a class="nav-link" href="/" @click="showNav = !showNav">HOME</a>
-            </li>
-            <li class="nav-item delay-2">
-              <a class="nav-link" href="/webinar" @click="showNav = !showNav"
-                >WEBINAR</a
-              >
-            </li>
-            <li class="nav-item delay-3">
-              <a class="nav-link" href="/" @click="showNav = !showNav"
-                >PODCAST</a
-              >
-            </li>
-            <li class="nav-item delay-4">
-              <a class="nav-link" href="/" @click="showNav = !showNav"
-                >VIDEO</a
-              >
-            </li>
-          </ul>
-        </div>
+              </ul>
+            </div>
+          </div>
+        </transition>
       </div>
-    </div>
+    </transition>
     <!--main-menu end-->
   </header>
 </template>
@@ -99,34 +83,23 @@ export default {
 </script>
 
 <style scoped>
-.closebtn {
-  position: absolute;
-  top: 5%;
-  right: 20%;
-  font-size: 36px;
-  color: white;
+/* Enter and leave animations can use different */
+/* durations and timing functions.              */
+.slide-fade-enter-active {
+  transition: all 0.3s ease;
 }
-
-/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
-  .sidebar {
-    padding-top: 15px;
-  }
-  .sidebar a {
-    font-size: 18px;
-  }
+.slide-fade-leave-active {
+  transition: all 0.8s cubic-bezier(1, 0.5, 0.8, 1);
+}
+.slide-fade-enter, .slide-fade-leave-to
+/* .slide-fade-leave-active below version 2.1.8 */ {
+  transform: translateX(10px);
+  opacity: 0;
 }
 
 .navbar {
   z-index: 2000;
   padding: 0.5rem;
-  /*background: var(--secondary-blue) url("~@/assets/img/bg-so.jpg") no-repeat
-    center;*/
-}
-
-.bg-nav {
-  background: var(--secondary-orange) url("~@/assets/img/bg-so.jpg") no-repeat
-    bottom left;
 }
 
 .container-fluid {
@@ -134,13 +107,8 @@ export default {
 }
 
 .navbar-brand {
-  width: 65px;
-  height: 65px;
-}
-
-.navbar-brand img {
-  height: 60px;
   width: auto;
+  height: 45px;
 }
 
 .nav-open .main-menu {
@@ -150,7 +118,6 @@ export default {
   height: 100%;
   opacity: 1;
   visibility: visible;
-  z-index: 10000;
   background: var(--secondary-blue);
 }
 
@@ -354,6 +321,7 @@ export default {
   .nav-open .main-menu {
     width: 100%;
     height: 100%;
+    position: absolute;
     top: 0;
     left: 0;
   }

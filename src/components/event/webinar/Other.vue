@@ -28,28 +28,10 @@ export default {
       let list = [
         {
           title:
-            "Data Storytelling: Mengkomunikasikan dan Memvisualisasikan Data",
-          speaker: "Caroline Cassandra Ratuolivia",
-          date: "16 March 2021",
+            "Quarter Life Crisis Breakthrough",
+          speaker: "Ria R Chritiana",
+          date: "3 March 2021",
           image: "spk-1",
-        },
-        {
-          title:
-            "Data Storytelling: Mengkomunikasikan dan Memvisualisasikan Data",
-          speaker: "Caroline Cassandra Ratuolivia",
-          date: "16 March 2021",
-        },
-        {
-          title:
-            "Data Storytelling: Mengkomunikasikan dan Memvisualisasikan Data",
-          speaker: "Caroline Cassandra Ratuolivia",
-          date: "16 March 2021",
-        },
-        {
-          title:
-            "Data Storytelling: Mengkomunikasikan dan Memvisualisasikan Data",
-          speaker: "Caroline Cassandra Ratuolivia",
-          date: "16 March 2021",
         },
       ];
       list.forEach((element) => {
