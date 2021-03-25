@@ -35,7 +35,7 @@
       <div class="container-fluid">
         <div class="row webinar-layout">
           <div
-            class="col-md-6 text-poster my-auto"
+            class="col-md-6 text-poster my-auto order-1 order-md-0"
             data-aos="fade-right"
             data-aos-offset="320"
             data-aos-easing="ease-in-sine"
@@ -53,7 +53,7 @@
             <a href="/webinar"><button class="btn-more">See more</button></a>
           </div>
           <div
-            class="col-md-6 text-md-right text-center"
+            class="col-md-6 photo-poster-wrapper text-md-right text-center order-0 order-md-1"
             data-aos="fade-right"
             data-aos-offset="320"
             data-aos-easing="ease-in-sine"
@@ -336,7 +336,12 @@ export default {
   }
 
   .text-poster {
-    margin-top: 2rem;
+    padding: 2rem 1rem;
+
+  }
+
+  .photo-poster-wrapper {
+    clip-path: ellipse(120% 80% at 50% 20%);
   }
 
   .photo-poster {

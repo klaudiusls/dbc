@@ -89,7 +89,7 @@ img {
 
 @media only screen and (max-width: 418px) {
   .rounded-circle {
-    border-radius: 5% !important;
+    border-radius: 55% !important;
   }
 
   .col-md-6 {

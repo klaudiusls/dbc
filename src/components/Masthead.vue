@@ -56,7 +56,7 @@ export default {};
 
 .photo-poster {
   max-height: 700px;
-  filter: drop-shadow(4px 2px 8px #585858)
+  filter: drop-shadow(4px 2px 8px #585858);
 }
 
 .text-poster h1 {
@@ -75,10 +75,11 @@ export default {};
 .btn-save {
   margin: 0;
   margin-top: 1rem;
-  padding: 0.75rem 1.5rem;
+  padding: 1rem 2rem;
   border: transparent;
   border-radius: 2rem;
   font-weight: 700;
+  color: var(--secondary-orange);
   background-color: white;
 }
 
@@ -104,8 +105,7 @@ export default {};
 
   .col-md-5 {
     padding-top: 6rem;
-    background: var(--secondary-orange)
-      url("~@/assets/img/bg-poster.jpg")
+    background: var(--secondary-orange) url("~@/assets/img/bg-poster.jpg")
       no-repeat fixed bottom right;
     clip-path: ellipse(120% 80% at 50% 20%);
   }
@@ -113,7 +113,7 @@ export default {};
   .text-poster {
     text-align: center;
     padding: 2rem 1rem;
-    padding-top: 1rem;
+    padding-top: 3rem;
   }
 
   .text-poster h1 {

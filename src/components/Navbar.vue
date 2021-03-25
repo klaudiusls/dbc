@@ -1,13 +1,9 @@
 <template>
   <header class="head-main">
-    <div class="fixed-top navbar" :class="{'bg-nav': $route.path != '/'}">
+    <div class="fixed-top navbar" :class="{ 'bg-nav': $route.path != '/' }">
       <div class="container-fluid d-flex justify-content-between">
         <a href="/" class="navbar-brand d-flex align-items-center">
-          <img
-            src="@/assets/logo/logo-po-clear.png"
-            class=""
-            alt=""
-          />
+          <img src="@/assets/logo/logo-po-clear.png" class="" alt="" />
         </a>
         <a @click="showNav = !showNav" class="nav-button ml-auto"
           ><span id="nav-icon3"
@@ -76,9 +72,7 @@
               >
             </li>
             <li class="nav-item delay-4">
-              <a class="nav-link" href="/" @click="showNav = !showNav"
-                >VIDEO</a
-              >
+              <a class="nav-link" href="/" @click="showNav = !showNav">VIDEO</a>
             </li>
           </ul>
         </div>
