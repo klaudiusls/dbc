@@ -29,7 +29,7 @@ export default {
         {
           title:
             "Quarter Life Crisis Breakthrough",
-          speaker: "Ria R Chritiana",
+          speaker: "Ria R Christiana",
           date: "3 March 2021",
           image: "spk-1",
         },

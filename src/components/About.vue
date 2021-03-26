@@ -66,6 +66,10 @@ iframe {
   border-radius: 1rem;
 }
 
+p {
+  line-height: 1.8;
+}
+
 @media only screen and (max-width: 418px) {
   .container-fluid {
     text-align: center;

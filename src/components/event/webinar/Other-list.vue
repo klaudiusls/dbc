@@ -6,7 +6,7 @@
       <p>{{ webinar.speaker }}</p>
     </div>
     <div class="col-md-6 webinar-img">
-      <img class="img-fluid" src="@/assets/img/webinar/spk-02.jpg" alt="" />
+      <img class="img-fluid" src="@/assets/img/webinar/webinar-so-1.jpg" alt="" />
     </div>
   </div>
 </template>

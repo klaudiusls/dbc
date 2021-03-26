@@ -13,9 +13,13 @@
           data-aos-offset="200"
           data-aos-easing="ease-in-ease"
         >
-          <!-- <img class="img-fluid" src="@/assets/img/text-poster.png" alt="" /> -->
+          <img
+            class="img-fluid headline-img"
+            src="@/assets/img/dbclass-headline.png"
+            alt=""
+          /><!--
           <h1>Communication and Brand Online Class by dbrandcom</h1>
-          <h2>#DoBetterTogether</h2>
+          <h2>#DoBetterTogether</h2>-->
           <a href="#about"><button class="btn-save">Learn more</button></a>
         </div>
         <div
@@ -41,7 +45,7 @@ export default {};
 
 <style scoped>
 .masthead {
-  background: var(--secondary-orange) url("~@/assets/img/bg-poster.jpg")
+  background: var(--secondary-orange) url("~@/assets/img/bg-so-new-min.jpg")
     no-repeat fixed;
   background-size: 100% 100%;
   padding: 0;
@@ -52,6 +56,7 @@ export default {};
   padding: 6rem 6rem;
   padding-bottom: 0;
   width: 100%;
+  max-width: 1440px;
 }
 
 .photo-poster {
@@ -70,6 +75,10 @@ export default {};
   font-weight: normal;
   font-size: 30px;
   color: var(--secondary-blue);
+}
+
+.headline-img {
+  max-width: 550px;
 }
 
 .btn-save {
@@ -105,14 +114,18 @@ export default {};
 
   .col-md-5 {
     padding-top: 6rem;
-    background: var(--secondary-orange) url("~@/assets/img/bg-poster.jpg")
+    background: var(--secondary-orange) url("~@/assets/img/bg-so-new-min.jpg")
       no-repeat fixed bottom right;
     clip-path: ellipse(120% 80% at 50% 20%);
   }
 
+  .headline-img {
+    max-width: 100%;
+  }
+
   .text-poster {
     text-align: center;
-    padding: 2rem 1rem;
+    padding: 2rem 1.5rem;
     padding-top: 3rem;
   }
 
