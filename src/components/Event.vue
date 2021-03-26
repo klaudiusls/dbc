@@ -35,22 +35,27 @@
       <div class="container-fluid">
         <div class="row webinar-layout">
           <div
-            class="col-md-6 text-poster my-auto order-1 order-md-0"
+            class="col-md-6 text-poster mt-2 order-1 order-md-0"
             data-aos="fade-right"
             data-aos-offset="320"
             data-aos-easing="ease-in-sine"
           >
             <img
               class="img-fluid"
-              src="@/assets/img/text-poster-po.png"
+              src="@/assets/img/text-poster-april.png"
               alt=""
             />
             <a
-              href="https://loket.com/event/dbclass-quarter-life-breakthrough"
+              href="https://www.loket.com/event/do-better-class-drop-the-droop_0l1"
               target="_blank"
               ><button class="btn-register">Save your seat</button></a
             >
             <a href="/webinar"><button class="btn-more">See more</button></a>
+            <!-- <img
+              class="img-fluid guest ml-4 none"
+              src="@/assets/img/guest-poster-april.png"
+              alt=""
+            /> -->
           </div>
           <div
             class="col-md-6 photo-poster-wrapper text-md-right text-center order-0 order-md-1"
@@ -60,7 +65,7 @@
           >
             <img
               class="img-fluid photo-poster"
-              src="@/assets/img/photo-poster.png"
+              src="@/assets/img/poster-april-new.png"
               alt=""
             />
           </div>
@@ -170,17 +175,18 @@ export default {
 }*/
 
 .tab .tab-po:hover {
-  background-color: #f03022;
+  /*background-color: #f03022;*/
+  background-color: var(--secondary-purple);
   transition: ease-in-out background 0.5s;
 }
 
 .tab .tab-so:hover {
-  background-color: #f05800;
+  background-color: var(--secondary-purple);
   transition: ease-in-out background 0.5s;
 }
 
 .tab .tab-sb:hover {
-  background-color: #210588;
+  background-color: var(--secondary-purple);
   transition: ease-in-out background 0.5s;
 }
 
@@ -233,13 +239,23 @@ export default {
 
 .photo-poster {
   max-height: 700px;
-  filter: drop-shadow(4px 2px 8px #585858)
+  margin-top: 4rem;
+  filter: drop-shadow(4px 2px 8px #585858);
+}
+
+.text-poster {
+  padding: 2rem 1rem;
+  padding-bottom: 2rem;
+}
+
+.text-poster .guest {
+  max-width: 150px;
 }
 
 .btn-register {
   margin: 0;
   margin-top: 2rem;
-  margin-left: .5rem;
+  margin-left: 0.5rem;
   padding: 1rem 2rem;
   border: transparent;
   border-radius: 2rem;
@@ -273,8 +289,8 @@ export default {
 }
 
 #podcast-tab {
-  background: var(--secondary-orange) url("~@/assets/img/bg-poster.jpg")
-    no-repeat right fixed;
+  background: var(--secondary-orange)/* url("~@/assets/img/bg-poster.jpg")
+    no-repeat right fixed*/;
   background-size: 100% auto;
   padding: 8rem;
   width: 100%;
@@ -282,8 +298,8 @@ export default {
 }
 
 #video-tab {
-  background: var(--primary-orange) url("~@/assets/img/bg-po.jpg") no-repeat
-    left fixed;
+  background: var(--primary-orange)/* url("~@/assets/img/bg-po.jpg") no-repeat
+    left fixed*/;
   background-size: 100% auto;
   padding: 8rem;
   width: 100%;
@@ -331,13 +347,13 @@ export default {
 
   #webinar-tab .container-fluid {
     padding: 3rem 2rem;
-    padding-bottom: 0;
+    padding-bottom: 3rem;
     width: 100%;
   }
 
   .text-poster {
     padding: 2rem 1rem;
-
+    padding-bottom: 2rem;
   }
 
   .photo-poster-wrapper {
@@ -381,14 +397,14 @@ export default {
   }
 
   .btn-register {
-  margin-left: 0;
-  width: 100%;
-}
+    margin-left: 0;
+    width: 100%;
+  }
 
-.btn-more {
-  margin-top: 1rem;
-  margin-left: 0;
-  width: 100%;
-}
+  .btn-more {
+    margin-top: 1rem;
+    margin-left: 0;
+    width: 100%;
+  }
 }
 </style>

@@ -24,7 +24,7 @@ export default {
         text_color: "color-so",
         title: "Podcast",
         desc:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem corrupti vitae, officiis laudantium ducimus illum, similique natus, consequuntur illo placeat deserunt minima. Rerum adipisci est similique pariatur nemo dolores accusantium.",
+          "One click away to listen to an insightful dialogue between the experts that can accompany you in any condition.",
       },
       newMsg: "kladuius",
     };

@@ -27,7 +27,7 @@ export default {
         text_color: "color-sb",
         title: "Webinar",
         desc:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem corrupti vitae, officiis laudantium ducimus illum, similique natus, consequuntur illo placeat deserunt minima. Rerum adipisci est similique pariatur nemo dolores accusantium.",
+          "Discloses the important aspects of your career path that could guide you to do better in any matter, together. ",
       },
     };
   },

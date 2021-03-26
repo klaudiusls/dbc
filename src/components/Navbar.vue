@@ -13,7 +13,7 @@
     </div>
     <!--navbar end-->
 
-    <div v-if="showNav" class="nav-open" @close="showNav = false">
+    <div v-if="showNav" class="nav-open" @close="showNav = false" id="slide">
       <div class="fixed-top main-menu">
         <div class="flex-center p-5">
           <a

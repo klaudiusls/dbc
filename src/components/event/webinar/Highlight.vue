@@ -2,15 +2,15 @@
   <section id="webinar-highlight" class="webinar-highlight" data-aos="fade-down" data-aos-easing="ease-in-ease">
     <div class="container-fluid">
       <div class="row">
-        <div class="col-md-7 text-poster my-auto" data-aos="zoom-in" data-aos-offset="200" data-aos-easing="ease-in-ease">
+        <div class="col-md-7 text-poster my-auto pb-4" data-aos="zoom-in" data-aos-offset="200" data-aos-easing="ease-in-ease">
           <!-- <img class="img-fluid" src="@/assets/img/text-poster.png" alt="" /> -->
-          <img class="img-fluid" src="@/assets/img/text-poster-po.png" alt="" />
-          <a href="https://loket.com/event/dbclass-quarter-life-breakthrough" target="_blank"><button class="btn-action">Save your seat</button></a>
+          <img class="img-fluid" src="@/assets/img/text-poster-april.png" alt="" />
+          <a href="https://www.loket.com/event/do-better-class-drop-the-droop_0l1" target="_blank"><button class="btn-action">Save your seat</button></a>
         </div>
         <div class="col-md-5 text-right" data-aos="fade-up" data-aos-offset="400" data-aos-easing="ease-in-ease">
           <img
             class="img-fluid photo-poster"
-            src="@/assets/img/photo-poster.png"
+            src="@/assets/img/photo-poster-april.png"
             alt=""
           />
         </div>

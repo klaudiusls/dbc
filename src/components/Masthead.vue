@@ -14,7 +14,7 @@
           data-aos-easing="ease-in-ease"
         >
           <!-- <img class="img-fluid" src="@/assets/img/text-poster.png" alt="" /> -->
-          <h1>Communication & Branding Online Class by dbrandcom</h1>
+          <h1>Communication and Brand Online Class by dbrandcom</h1>
           <h2>#DoBetterTogether</h2>
           <a href="#about"><button class="btn-save">Learn more</button></a>
         </div>
@@ -26,7 +26,7 @@
         >
           <img
             class="img-fluid photo-poster"
-            src="@/assets/img/ibu-ria-crop.png"
+            src="@/assets/img/photo-poster.png"
             alt=""
           />
         </div>
@@ -99,7 +99,7 @@ export default {};
 
   #masthead .container-fluid {
     padding: 0 1rem;
-    padding-bottom: 0;
+    padding-bottom: 3rem;
     width: 100%;
   }
 

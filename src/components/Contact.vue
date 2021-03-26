@@ -139,7 +139,7 @@ textarea {
   width: 100%;
   margin-bottom: 0.5rem;
   border: 4px solid white;
-  border-radius: 0.25rem;
+  border-radius: 2rem;
   padding: 1.5rem;
   background-color: transparent;
 }
@@ -160,7 +160,7 @@ textarea:focus {
   font-size: 18px;
   color: white;
   background-color: var(--secondary-orange);
-  border-radius: 0.25rem;
+  border-radius: 2rem;
   padding: 1rem 2rem;
   width: 100%;
 }

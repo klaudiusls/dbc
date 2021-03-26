@@ -24,7 +24,7 @@ export default {
         text_color: "color-po",
         title: "Video",
         desc:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem corrupti vitae, officiis laudantium ducimus illum, similique natus, consequuntur illo placeat deserunt minima. Rerum adipisci est similique pariatur nemo dolores accusantium.",
+          "Seek the ultimate tools to stand out from the crowd through our visualization.",
       },
       newMsg: "kladuius",
     };
